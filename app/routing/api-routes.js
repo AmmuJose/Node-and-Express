@@ -22,10 +22,7 @@ module.exports = function(app){
             }
             arrayAbs.push(diff);
         });
-        var matchingIndex = arrayAbs.indexOf(Math.max.apply(Math, arrayAbs));
-        console.log(arrayAbs);
-        console.log();
-        console.log()
+        var matchingIndex = arrayAbs.indexOf(Math.max.apply(Math, arrayAbs));        
         res.json(data.friendsArray[matchingIndex].name);
     });
 }
