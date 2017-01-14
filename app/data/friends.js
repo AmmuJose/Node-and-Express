@@ -1,31 +1,31 @@
 "use strict";
 var friendsArray = [{
     name: "Yoda",
-    scores: [5, 4, 3, 1, 4, 2, 1, 3, 5, 4],
+    scores: [1, 5, 1, 5, 1, 5, 1, 5, 1, 5],
 }, {
     name: "Darth Maul",
-    scores: [1, 4, 5, 5, 4, 1, 2, 5, 5, 5],
+    scores: [1, 4, 1, 4, 1, 4, 1, 4, 1, 4],
 }, {
     name: "Obi Wan Kenobi",
-    scores: [3, 3, 5, 5, 4, 3, 3, 1, 2, 2],
+    scores: [1, 3, 1, 3, 1, 3, 1, 3, 1, 3],
 }, {
     name: "Darth Vader",
-    scores: [5, 5, 2, 2, 4, 1, 1, 1, 2, 3],
+    scores: [1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
 }, {
     name: "Kylo Ren",
-    scores: [3, 5, 2, 1, 5, 5, 5, 5, 4, 4],
+    scores: [2, 5, 2, 5, 2, 5, 2, 5, 2, 5],
 }, {
     name: "Ahsoka Tano",
-    scores: [5, 4, 5, 5, 4, 3, 3, 5, 5, 5],
+    scores: [5, 4, 5, 4, 5, 4, 5, 4, 5, 4],
 }, {
     name: "Luke Skywalker",
-    scores: [1, 3, 5, 5, 4, 3, 3, 1, 3, 5],
+    scores: [5, 3, 5, 3, 5, 3, 5, 3, 5, 3],
 }, {
     name: "Princess Leia",
-    scores: [1, 1, 2, 2, 4, 1, 1, 1, 2, 3],
+    scores: [3, 4, 3, 4, 3, 4, 3, 4, 3, 4],
 }, {
     name: "Han Solo",
-    scores: [3, 3, 5, 5, 4, 3, 3, 4, 4, 4],
+    scores: [2, 2, 4, 2, 4, 2, 2, 4, 4, 4],
 }, {
     name: "Leader Snoke",
     scores: [5, 5, 4, 4, 4, 1, 1, 1, 2, 3],
