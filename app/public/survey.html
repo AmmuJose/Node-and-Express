@@ -9,69 +9,134 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+    
+
 </head>
 
 <body class="container">
     <h2>Which Star Wars Character Are You?</h2>
-    <p>Take this personality test to determine which main Star Wars character you are most like!</p>
+    <p>Scale 1(Strongly Disagree) to 5(Strongly Agree)</p>
     <form action="" method="POST" role="form">
-        <label>1) How would you describe your self?</label><br>
-        <input type="radio" name="question1" value="3" checked/>Mysterious<br>
-        <input type="radio" name="question1" value="4" />Adventurous<br>
-        <input type="radio" name="question1" value="5" />Determined<br>
-        <input type="radio" name="question1" value="2" />Impatient<br>
-        <input type="radio" name="question1" value="1" />Worried<br>
+		<h4>1) Your mind is always buzzing with unexplored ideas and plans.</h4>
+	 	<select id="q1">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+      	</select>
         <br>
-
-        <label>2) What would you do in a fight?</label><br>
-        <input type="radio" name="question2" value="1" checked/>I would run away.<br>
-        <input type="radio" name="question2" value="4" />Nothing beats a blaster by your side!<br>
-        <input type="radio" name="question2" value="3" />I would charge in with my lightsaber.<br>
-        <input type="radio" name="question2" value="2" />I would show no mercy.<br>
-        <input type="radio" name="question2" value="5" />I would try to reason and avoid fighting altogether.<br>
+		<h4>2) Generally speaking, you rely more on your experience than your imagination.</h4>
+	 	<select id="q2">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+      	</select>
         <br>
-
-        <label>3) What is your favorite color?</label><br>
-        <input type="radio" name="question3" value="3" checked/>Red<br>
-        <input type="radio" name="question3" value="4" />Gold<br>
-        <input type="radio" name="question3" value="5" />Black<br>
-        <input type="radio" name="question3" value="2" />Blue<br>
-        <input type="radio" name="question3" value="1" />Green<br>
+		<h4>3) You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+	 	<select id="q3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+      	</select>
         <br>
-
-        <label>4) Which location is the most appealing to you?</label><br>
-        <input type="radio" name="question4" value="5" checked/>A City<br>
-        <input type="radio" name="question4" value="4" />A Bar<br>
-        <input type="radio" name="question4" value="3" />A Palace<br>
-        <input type="radio" name="question4" value="2" />A Desert<br>
-        <input type="radio" name="question4" value="1" />A Forest<br>
+		<h4>4) You rarely do something just out of sheer curiosity.</h4>
+	 	<select id="q4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+      	</select>
+          <br>
+		<h4>5) People can rarely upset you.</h4>
+	 	<select id="q5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+      	</select>
+          <br>
+		<h4>6) It is often difficult for you to relate to other people’s feelings.</h4>
+	 	<select id="q6">
+	 		<option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+      	</select>
+          <br>
+		<h4>7) In a discussion, truth should be more important than people’s sensitivities.</h4>
+	 	<select id="q7">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+      	</select>
+          <br>
+		<h4>8) You rarely get carried away by fantasies and ideas.</h4>
+	 	<select id="q8">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+      	</select>
+          <br>
+		<h4>9) You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+	 	<select id="q9">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+      	</select>
+          <br>
+		<h4>10) You feel more energetic after spending time with a group of people.</h4>
+	 	<select id="q10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+      	</select>
         <br>
-
-        <label>5) What kind of space ship would you pilot?</label><br>
-        <input type="radio" name="question5" value="4" checked/>A royal vessel.<br>
-        <input type="radio" name="question5" value="2" />A large, destructive ship.<br>
-        <input type="radio" name="question5" value="5" />A small and maneuverable fighter.<br>
-        <input type="radio" name="question5" value="3" />An old but reliable ship.<br>
-        <input type="radio" name="question5" value="1" />I hate flying!<br>
         <br>
-        <button type="button" class="btn btn-primary btn-md" id="submitBtn"></span><span class="glyphicon glyphicon-fire"></span> Add to the Force</button>
+        <button type="button" class="btn btn-primary btn-md" id="submitBtn"></span><span class="glyphicon glyphicon-fire"></span> Check </button>
     </form>
     <br>
-    <script type="text/javascript">
-        $("#submitBtn").on("click", function(){
-            var q1_val = $('input[name=question1]:checked').val();
-            var q2_val = $('input[name=question2]:checked').val();
-            var q3_val = $('input[name=question3]:checked').val();
-            var q4_val = $('input[name=question4]:checked').val();
-            var q5_val = $('input[name=question5]:checked').val();
-            var score = [q1_val, q2_val, q3_val, q4_val, q5_val];
-            console.log(score);
-            console.log();
-            $.post("http://localhost:8080", score).done(function(data){
-                console.log("done");
+    <div id="dialog1" title="Your Matching Character" hidden="hidden">Matching Character</div>
+
+    <script type="text/javascript"> 
+        $(function () {
+            $( "#dialog1" ).dialog({
+                autoOpen: false
             });
-            return false;
-        });
+  
+            $("#submitBtn").click(function() {
+                var score = {score: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]};
+
+                var baseURL = window.location.origin;
+                $.post(baseURL + "/api/friends", score, function(data){
+                    console.log(data);
+                    $("#dialog1").text("" + data + " !!!");
+                });
+                $("#dialog1").dialog('open');
+            });
+        });     
+        
     </script>
 </body>
+
 </html>
